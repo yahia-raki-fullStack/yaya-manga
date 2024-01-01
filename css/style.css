@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(28, 26, 26);
+  color: azure;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header > * {
+  height: 10vh;
+  background: rgb(230, 115, 115);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out 0.5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: 0.1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #b4b4b4;
+}
+
+.logo {
+  max-height: 100%;
+  width: auto;
+  border-radius: 4px;
+  background: rgb(76, 75, 75);
+}
+
+.top-mangas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.top-mangas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.manga-info {
+  text-align: center;
+  width: 100%;
+  border: 1px solid white; /* Add a white border to separate containers */
+  padding: 1rem; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in the total width */
+}
+.top-mangas > .manga-info {
+  flex: 1;
+  max-width: 200px;
+  margin: 0 auto; /* Center the manga info container */
+}
+
+.manga-cover {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto; /* Center the image within the manga info container */
+}
+.hidden {
+  display: none;
+}
+
+#showcase-mangas {
+  height: auto;
+  width: 100%;
+  display: grid;
+  margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+#showcase-mangas > .top-mangas:last-child {
+  margin-bottom: 2rem;
+}
+
+.description {
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 80vw;
+  margin: 0 auto;
+  border-bottom: 3px solid white;
+}
+.manga-name {
+  display: block;
+  color: #ff6600;
+  font-size: 2rem; /* Adjust the font size for the title */
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.showcase-mangas__choicen {
+  height: 80vh;
+  width: 100vw;
+}
+.clicked-manga {
+  overflow: hidden;
+}
+.clicked-manga > h2 {
+  padding: 0;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.cover {
+  margin: 0 auto;
+  object-fit: cover;
+  width: 80%;
+  height: 100%;
+}
+.manga-page {
+  margin: 0 auto;
+  object-fit: cover;
+  width: 80%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Arrow styling */
+.arrow {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.arrow:hover {
+  background: #007bff;
+}
+
+/* Textarea styling */
+textarea {
+  width: 30%;
+  height: 3rem;
+  resize: none; /* Disable textarea resizing */
+  padding: 1rem;
+}
+
+.chapter-btn {
+  /* Add your button styling here */
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.current-chapter {
+  background-color: red;
+  color: white;
+  /* Add any other styles you want for the highlighted chapter */
+}
