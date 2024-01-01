@@ -8,6 +8,9 @@ import {
 } from "/javascript/mainPageMarkUp";
 import { showMangaChapters } from "/javascript/selectedMangaPage";
 
+// Update your API URLs
+const mangaDexApiUrl = "/.netlify/mangadex-proxy";
+
 // Call the backToMainPage function to set up the click event listener
 backToMainPage();
 
@@ -41,8 +44,8 @@ const showcaseMangas = [
   `magi`,
 ];
 
-// Create a new instance of the MangaDex class
-const mangadex = new MANGA.MangaDex();
+// Create a new instance of the MangaDex class with the API URL
+const mangadex = new MANGA.MangaDex(mangaDexApiUrl);
 
 // Function to show the landing page mangas
 async function showTheLandingPageMangas([...manga]) {
@@ -84,6 +87,9 @@ async function showTheLandingPageMangas([...manga]) {
     console.error(err);
   }
 }
+
+// Rest of the code remains unchanged
+// ...
 
 function handleMangaClick() {
   // Update the hash when an image is clicked
