@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@consumet/extensions": "^1.5.4",
-    "axios": "^1.6.3",
+    "esbuild": "^0.19.11",
     "vite": "^5.0.10"
   }
 }

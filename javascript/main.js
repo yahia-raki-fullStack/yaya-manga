@@ -100,7 +100,7 @@ function handleMangaClick() {
 }
 
 // Show the landing page mangas
-await showTheLandingPageMangas(showcaseMangas);
+showTheLandingPageMangas(showcaseMangas);
 
 // Function to extract manga ID from the hash
 function mangaId() {
